@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Chrome Dev Tools plugin",
+    "version": "1.0",
+    "action": {
+        "default_popup":"chrome-extension/build/index.html"
+    },
+    "background": {
+        "service_worker": "service-worker.js"
+      },
+    "permissions":[
+        "webNavigation",
+        "activeTab",
+        "tabs"
+    ]       
+}
